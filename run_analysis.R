@@ -1,4 +1,4 @@
-setwd("C:/Users/et86694/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset")
+setwd("C:/Users/et86714/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset")
 activity_labels <- read.table("activity_labels.txt")
 features <- read.table("features.txt")
 features
@@ -6,7 +6,7 @@ features
 extract_col_label <- as.character(features$V2)
 extract_col_label
 
-setwd("C:/Users/et86694/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset/train")
+setwd("C:/Users/et86714/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset/train")
 subject_train <- read.table("subject_train.txt")
 colnames(subject_train) <- "subject_number"
 
@@ -34,7 +34,7 @@ View(full_train_dataset)
 
 
 
-setwd("C:/Users/et86694/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset/test")
+setwd("C:/Users/et86714/Desktop/Coursera/3_Getting_and_Cleaning_Data/Course_Project/UCI HAR Dataset/test")
 subject_test <- read.table("subject_test.txt")
 colnames(subject_test) <- "subject_number"
 
@@ -54,4 +54,5 @@ head(map_Y_test)
 
 full_test_dataset <- cbind(subject_test, map_Y_test, X_test)
 View(full_test_dataset)
+
 
